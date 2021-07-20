@@ -27,7 +27,7 @@
 }
 
 .products {
-  /* background-image: url("./images/img-1.jpg"); */
+  /* background: url("/images/img-home.jpg"); */
   background-color: rgb(255, 0, 0);
   background-position: center;
   background-size: fill;
