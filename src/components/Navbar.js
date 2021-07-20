@@ -29,7 +29,7 @@ function Navbar() {
             <div className="navbar-container">
                 {/*Logo*/}
                 <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
-                    ROAM <i className="fab fa-typo3"></i>
+                    NEXT <i className="fab fa-typo3"></i>
                     </Link> 
                  {/*Menu*/} 
                 <div className='menu-icon' onClick={handleClick}>
