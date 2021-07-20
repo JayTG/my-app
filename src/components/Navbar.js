@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from './Button';
+import { Button } from './Button'; /*Import button script*/
 import './Navbar.css'
 
 function Navbar() {
@@ -9,7 +9,7 @@ function Navbar() {
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-
+    /*Show the button depending on the size of the window*/
     const showButton = () => {
         if(window.innerWidth <= 960){
             setButton(false);
@@ -17,7 +17,7 @@ function Navbar() {
             setButton(true);
         }
     }
-
+   
     useEffect(() => { showButton()}, [])
 
     window.addEventListener('resize', showButton);
@@ -25,14 +25,20 @@ function Navbar() {
     return (
         <>
         <nav className="navbar">
+            {/*Container for navagation bar*/}
             <div className="navbar-container">
+                {/*Logo*/}
                 <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
-                    TRVL <i className="fab fa-typo3"></i>
-                    </Link>  
+                    ROAM <i className="fab fa-typo3"></i>
+                    </Link> 
+                 {/*Menu*/} 
                 <div className='menu-icon' onClick={handleClick}>
+                      {/*Changes images when clicked*/}
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div> 
+                {/*Changes list format when clicked*/}
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                     {/*listed items in the navagation bar*/}
                     <li className='nav-item'>
                     <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                             Home
@@ -53,7 +59,8 @@ function Navbar() {
                             Sign Up
                         </Link>
                     </li>
-                    </ul>   
+                    </ul>  
+                     {/*Sign up Button*/} 
                     {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
             </div>
         </nav>
