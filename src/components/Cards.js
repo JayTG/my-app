@@ -10,7 +10,7 @@ function Cards() {
                 <div className="cards__wrapper">
                     {/*Card List 1*/}
                     <ul className="cards__items">
-                        {/*Card item component*/}
+                        {/*Card item components*/}
                        <CardItem 
                         src="images/img-9.jpg"
                         text= 'Explore the waterfall inside the Amazon Jungle'
@@ -26,7 +26,7 @@ function Cards() {
                     </ul>
                     {/*Card List 2*/}
                     <ul className="cards__items">
-                        {/*Card item component*/}
+                        {/*Card item components*/}
                        <CardItem 
                         src="images/img-1.jpg"
                         text= 'Climb grand mountains'

@@ -27,6 +27,7 @@ function footer() {
                         <Button buttonStyle='btn--outline'>Subscribe</Button>
                     </form>
                 </div>
+            {/*Links section*/}
             </section>
             <div class='footer-links'>
             <div className='footer-link-wrapper'>
